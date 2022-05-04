@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  transition: all 0.7s linear;
+}
+
 h1,
 h2 {
   font-size: 4rem;
@@ -67,7 +71,6 @@ header .headerlist a {
   font-size: 1.3rem;
   text-decoration-color: transparent;
   color: #867772;
-  transition: all 1s linear;
 }
 header .headerlist a:hover {
   text-decoration: underline;
@@ -106,7 +109,6 @@ header .headerlist a:hover {
 .navigation .navlist .navmenu a {
   font-size: 1.3rem;
   color: #867772;
-  transition: all 1s linear;
 }
 .navigation .navlist .navmenu a:hover {
   color: #fff;
@@ -250,6 +252,53 @@ header .headerlist a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.subscribe section h3 {
+  padding: 1vh 0 1vh 0;
+}
+.subscribe section:nth-of-type(1) {
+  padding: 20vh 0 0 35vw;
+}
+.subscribe section:nth-of-type(1) input:nth-of-type(1) {
+  display: block;
+  width: 25vw;
+}
+.subscribe section:nth-of-type(1) input:nth-of-type(2) {
+  margin: 1vh 0 1vh 0;
+  width: 25vw;
+  display: block;
+}
+.subscribe section:nth-of-type(1) input:nth-of-type(3) {
+  margin: 2vh 0 0 0;
+  display: block;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 0.3% 1.2%;
+}
+
+#popupwindow {
+  background-color: #1d1d1d;
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  z-index: 5;
+  padding: 15vh 5vw;
+  text-align: center;
+  border: 1px dotted #867772;
+  border-radius: 3px;
+  width: 50vw;
+  visibility: hidden;
+}
+#popupwindow button {
+  margin: 3vh 0 0 0;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  border: 1px dotted #fff;
+  border-radius: 2px;
+  padding: 0.3% 1.2%;
 }
 
 /*# sourceMappingURL=style.css.map */

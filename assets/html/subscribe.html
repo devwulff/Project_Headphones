@@ -34,8 +34,8 @@
             <li class="navstripe">
                 <div></div>
             </li>
-            <li class="navmenu active">
-                <div></div><a href="#">EXPERIENCE</a>
+            <li class="navmenu">
+                <div></div><a href="experience.html">EXPERIENCE</a>
             </li>
             <li class="navstripe">
                 <div></div>
@@ -46,25 +46,28 @@
             <li class="navstripe">
                 <div></div>
             </li>
-            <li class="navmenu">
-                <div></div><a href="shop.html">SHOP</a>
+            <li class="navmenu active">
+                <div></div><a href="#">SHOP</a>
             </li>
         </ul>
     </aside>
-    <main class="main-lounger">
-        <img src="../img/section-experience-1.jpg" alt="Speakers">
-        <article>
-            <h2>Sounds Like Home</h2>
-            <p>There’s this feeling. It’s like your favorite song; like home. Maybe it’s hard to explain, but you know
-                it. It’s when everything is in sync and you are free to decompress, create, design, entertain. It’s that
-                atmosphere created when every element comes together in perfect harmony.</p>
-            <p>When it comes to composing a home, people explore design differently to curate their space. And the
-                beauty of that freedom is that there is more than one correct answer. As long as you pick elements that
-                make you feel at home, you’re on the right track. Maybe it’s a lamp, or a chair. Maybe even a plant, or
-                the music playing in the background. These things aren’t just there by chance - they mean something.</p>
-        </article>
+    <main class="subscribe">
+        <section>
+            <h3>IF YOU WANT THE LATEST NEWS, SUBSCRIBE</h3>
+            <form id="form" name="submit" onsubmit="subscritionWindow(); return false">
+                <input type=" email" name="email" id="inputmail" required placeholder="Email here">
+                <input type="text" name="name" id="inputname" placeholder="Name here">
+                <input type="submit" name="submit" value="Subscribe!">
+            </form>
+        </section>
+        <div id="popupwindow">
+            <p>You have succesfully subscribed our Newsletter</p>
+            <p>Check your Mails please !</p>
+            <button onclick="closePopup()">Close Window</button>
+        </div>
     </main>
-    <script src="assets/js/main.js"></script>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

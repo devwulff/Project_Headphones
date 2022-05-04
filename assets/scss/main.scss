@@ -29,7 +29,6 @@ header {
             font-size: $small;
             text-decoration-color: transparent;
             color: $link-col;
-            transition: all 1s linear;
         }
 
         a:hover {
@@ -75,7 +74,7 @@ header {
             a {
                 font-size: $small;
                 color: $link-col;
-                transition: all 1s linear;
+                // transition: all 1s linear;
             }
 
             a:hover {
@@ -269,5 +268,65 @@ header {
 
         }
 
+    }
+}
+
+// ==============================================================
+//                        SUBSCRIBE
+// ==============================================================
+
+.subscribe {
+    section {
+        h3 {
+            padding: 1vh 0 1vh 0;
+        }
+    }
+
+    section:nth-of-type(1) {
+        padding: 20vh 0 0 35vw;
+
+        input:nth-of-type(1) {
+            display: block;
+            width: 25vw;
+        }
+
+        input:nth-of-type(2) {
+            margin: 1vh 0 1vh 0;
+            width: 25vw;
+            display: block;
+        }
+
+        input:nth-of-type(3) {
+            margin: 2vh 0 0 0;
+            display: block;
+            background-color: #2e2e2e;
+            color: $text-col;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            padding: 0.3% 1.2%;
+        }
+    }
+}
+
+#popupwindow {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 20vh;
+    left: 25vw;
+    z-index: 5;
+    padding: 15vh 5vw;
+    text-align: center;
+    border: 1px dotted $link-col;
+    border-radius: 3px;
+    width: 50vw;
+    visibility: hidden;
+
+    button {
+        margin: 3vh 0 0 0;
+        background-color: #2e2e2e;
+        color: $text-col;
+        border: 1px dotted #fff;
+        border-radius: 2px;
+        padding: 0.3% 1.2%;
     }
 }
