@@ -374,7 +374,7 @@ header .headerlist a:hover {
   .navigation .navlist .navmenu {
     display: flex;
     align-items: center;
-    padding: 2vh 0 2vh 0;
+    padding: 1vh 0 1vh 0;
   }
   .navigation .navlist .navmenu div {
     margin: 0 15px 0 4px;
@@ -402,7 +402,7 @@ header .headerlist a:hover {
   .navigation .navlist .navstripe {
     padding: 3vh 0;
     border-left: 1px solid #867772;
-    margin: -8px 0 0 10px;
+    margin: -2px 0 -3px 1.8vw;
   }
 
   .main-home .home-design {
