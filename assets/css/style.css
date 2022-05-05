@@ -41,6 +41,21 @@ p {
   padding: 2% 0 0 0;
 }
 
+input {
+  text-align: center;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  font-size: 1.6rem;
+}
+
+textarea {
+  text-align: center;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 .button {
   background-color: #2e2e2e;
   color: rgb(115, 115, 115);
@@ -275,7 +290,7 @@ header .headerlist a:hover {
   display: block;
 }
 .subscribe section input:nth-of-type(3) {
-  margin: 2vh 0 0 0;
+  margin: 2vh 0 0 2%;
   display: block;
   background-color: #2e2e2e;
   color: rgb(115, 115, 115);
@@ -290,7 +305,7 @@ header .headerlist a:hover {
   width: 80%;
 }
 .subscribe section #contactbutton {
-  margin: 2vh 0 0 0;
+  margin: 2vh 0 0 2%;
   display: block;
   background-color: #2e2e2e;
   color: rgb(115, 115, 115);

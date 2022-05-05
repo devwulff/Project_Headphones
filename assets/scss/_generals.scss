@@ -40,6 +40,21 @@ p {
     padding: 2% 0 0 0;
 }
 
+input {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: $text-col;
+    font-size: $medium;
+}
+
+textarea {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: $text-col;
+    font-size: $medium;
+    font-weight: 300;
+}
+
 .button {
     background-color: #2e2e2e;
     color: $text-col;
