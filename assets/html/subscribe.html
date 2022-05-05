@@ -52,18 +52,30 @@
         </ul>
     </aside>
     <main class="subscribe">
+        <img src=" ../img/section-voyager.jpg" alt="Relax Armchair">
         <section>
             <h3>IF YOU WANT THE LATEST NEWS, SUBSCRIBE</h3>
             <form id="form" name="submit" onsubmit="subscritionWindow(); return false">
-                <input type=" email" name="email" id="inputmail" required placeholder="Email here">
+                <input type="email" name="email" id="inputmail" required placeholder="Email here">
                 <input type="text" name="name" id="inputname" placeholder="Name here">
-                <input type="submit" name="submit" value="Subscribe!">
+                <input type="submit" name="submit" value="Subscribe">
+            </form>
+            <h3>CONTACT US</h3>
+            <form id="contact" name="contact" onsubmit="contactWindow(); return false">
+                <input type="text" name="name" id="contactname" placeholder="Name here" required>
+                <textarea name="msg" id="msg" cols="40" rows="10" placeholder="Message here" required></textarea>
+                <input type="submit" id="contactbutton" name="contact" value="Send Message">
             </form>
         </section>
         <div id="popupwindow">
             <p>You have succesfully subscribed our Newsletter</p>
             <p>Check your Mails please !</p>
             <button onclick="closePopup()">Close Window</button>
+        </div>
+        <div id="contactwindow">
+            <p>Message has been succesfully send.</p>
+            <p>Please wait for our Support to get in touch with you.</p>
+            <button onclick="closecontact()">Close Window</button>
         </div>
     </main>
 

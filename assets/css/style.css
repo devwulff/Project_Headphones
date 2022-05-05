@@ -178,9 +178,6 @@ header .headerlist a:hover {
 .main-lounger article {
   padding: 25vh 15% 10vh 10%;
 }
-.main-lounger article img {
-  width: 100%;
-}
 .main-lounger article h2 {
   padding: 0 0 10vh 0;
 }
@@ -253,22 +250,46 @@ header .headerlist a:hover {
   object-fit: cover;
 }
 
+.subscribe {
+  display: grid;
+  grid-template: 1fr/55% 45%;
+  height: 100vh;
+}
+.subscribe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subscribe section {
+  padding: 20vh 0 0 10vw;
+}
 .subscribe section h3 {
   padding: 1vh 0 1vh 0;
 }
-.subscribe section:nth-of-type(1) {
-  padding: 20vh 0 0 35vw;
-}
-.subscribe section:nth-of-type(1) input:nth-of-type(1) {
+.subscribe section input:nth-of-type(1) {
   display: block;
   width: 25vw;
 }
-.subscribe section:nth-of-type(1) input:nth-of-type(2) {
+.subscribe section > input:nth-of-type(2) {
   margin: 1vh 0 1vh 0;
-  width: 25vw;
   display: block;
 }
-.subscribe section:nth-of-type(1) input:nth-of-type(3) {
+.subscribe section input:nth-of-type(3) {
+  margin: 2vh 0 0 0;
+  display: block;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 0.3% 1.2%;
+}
+.subscribe section #inputmail,
+.subscribe section #inputname,
+.subscribe section #contactname,
+.subscribe section #msg {
+  width: 80%;
+}
+.subscribe section #contactbutton {
   margin: 2vh 0 0 0;
   display: block;
   background-color: #2e2e2e;
@@ -292,6 +313,28 @@ header .headerlist a:hover {
   visibility: hidden;
 }
 #popupwindow button {
+  margin: 3vh 0 0 0;
+  background-color: #2e2e2e;
+  color: rgb(115, 115, 115);
+  border: 1px dotted #fff;
+  border-radius: 2px;
+  padding: 0.3% 1.2%;
+}
+
+#contactwindow {
+  background-color: #1d1d1d;
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  z-index: 5;
+  padding: 15vh 5vw;
+  text-align: center;
+  border: 1px dotted #867772;
+  border-radius: 3px;
+  width: 50vw;
+  visibility: hidden;
+}
+#contactwindow button {
   margin: 3vh 0 0 0;
   background-color: #2e2e2e;
   color: rgb(115, 115, 115);

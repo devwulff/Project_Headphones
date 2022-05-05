@@ -167,10 +167,6 @@ header {
     article {
         padding: 25vh 15% 10vh 10%;
 
-        img {
-            width: 100%;
-        }
-
         h2 {
             padding: 0 0 10vh 0;
         }
@@ -274,23 +270,30 @@ header {
 // ==============================================================
 
 .subscribe {
+    display: grid;
+    grid-template: 1fr / 55% 45%;
+    height: 100vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     section {
+        padding: 20vh 0 0 10vw;
+
         h3 {
             padding: 1vh 0 1vh 0;
         }
-    }
-
-    section:nth-of-type(1) {
-        padding: 20vh 0 0 35vw;
 
         input:nth-of-type(1) {
             display: block;
             width: 25vw;
         }
 
-        input:nth-of-type(2) {
+        >input:nth-of-type(2) {
             margin: 1vh 0 1vh 0;
-            width: 25vw;
             display: block;
         }
 
@@ -303,10 +306,50 @@ header {
             border-radius: 2px;
             padding: 0.3% 1.2%;
         }
+
+        #inputmail,
+        #inputname,
+        #contactname,
+        #msg {
+            width: 80%;
+        }
+
+        #contactbutton {
+            margin: 2vh 0 0 0;
+            display: block;
+            background-color: #2e2e2e;
+            color: $text-col;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            padding: 0.3% 1.2%;
+        }
     }
 }
 
 #popupwindow {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 20vh;
+    left: 25vw;
+    z-index: 5;
+    padding: 15vh 5vw;
+    text-align: center;
+    border: 1px dotted $link-col;
+    border-radius: 3px;
+    width: 50vw;
+    visibility: hidden;
+
+    button {
+        margin: 3vh 0 0 0;
+        background-color: #2e2e2e;
+        color: $text-col;
+        border: 1px dotted #fff;
+        border-radius: 2px;
+        padding: 0.3% 1.2%;
+    }
+}
+
+#contactwindow {
     background-color: #1d1d1d;
     position: fixed;
     top: 20vh;
