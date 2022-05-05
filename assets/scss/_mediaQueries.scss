@@ -1,0 +1,168 @@
+@media only screen and (max-width: 576px) {
+
+    // ==================================================================================
+    //                                      HEADER  
+    // ==================================================================================
+    header {
+        img {
+            padding: 2vh 0 0 1vw;
+        }
+    }
+
+    // ===================================================================
+    //                              NAVIGATION ASIDE
+    // ===================================================================
+    .navigation {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .navlist {
+            list-style: none;
+
+            .navmenu {
+                display: flex;
+                align-items: center;
+                padding: 2vh 0 2vh 0;
+
+                div {
+                    margin: 0 15px 0 4px;
+                    padding: 6px;
+                }
+
+                a {
+                    padding: 0 0 0 -5vw;
+                }
+            }
+
+            .active {
+                color: $nav-col;
+
+                div::before {
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 50%;
+                    padding: 10px;
+                    border: 1px solid $nav-col;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                a {
+                    color: $nav-col;
+                }
+            }
+
+            .navstripe {
+                padding: 3vh 0;
+                border-left: 1px solid $link-col;
+                margin: -8px 0 0 10px;
+            }
+
+        }
+    }
+
+
+    // ==============================================================
+    //                              MAIN HOME
+    // ==============================================================
+    .main-home {
+        .home-design {
+            display: grid;
+            grid-template: 2fr / 1fr;
+            padding: 0 5% 0 15%;
+
+            div:nth-of-type(1) {
+                margin: 0 5vw 5vh 2vw;
+            }
+
+            div:nth-of-type(2) {
+                margin: 15vh 5vw 20vh 2vw;
+            }
+        }
+    }
+
+    // ==============================================================
+    //                     MAIN LOUNGER / EXPERIENCE
+    // ==============================================================
+
+    .main-lounger {
+        grid-template: 1fr / 1fr;
+
+        img {
+            padding: 12vh 0 0 0;
+        }
+
+        article {
+            padding: 5vh 15% 10vh 25%;
+
+            h2 {
+                padding: 0 0 5vh 0;
+            }
+        }
+    }
+
+    // ==============================================================
+    //                              MAIN SHOP
+    // ==============================================================
+
+    .main-shop {
+        grid-template: 1fr / 1fr;
+    }
+
+    // ==============================================================
+    //                        MAIN INSPIRATION
+    // ==============================================================
+
+    .main-inspiration {
+        padding: 0 10vw 0 25vw;
+
+        .inspiration-video {
+            video {
+                width: 100%;
+            }
+        }
+
+        .inspiration-article {
+            margin: 10vh 0 20vh 0;
+
+            h3,
+            h2 {
+                margin: 0 0 3vh 0;
+            }
+
+            p {
+                margin: 0 0 5vh 0;
+            }
+
+            .inspiration-grid {
+                grid-template: repeat(4, 1fr) / 1fr;
+            }
+        }
+    }
+
+    // ==============================================================
+    //                        SUBSCRIBE
+    // ==============================================================
+
+    .subscribe {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        height: 100vh;
+
+        section {
+            padding: 5vh 0 0 23vw;
+        }
+    }
+
+    #popupwindow {
+        position: absolute;
+        padding: 10vh 2vw;
+    }
+
+    #contactwindow {
+        position: absolute;
+        padding: 10vh 2vw;
+    }
+}

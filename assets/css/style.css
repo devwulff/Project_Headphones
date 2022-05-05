@@ -343,4 +343,120 @@ header .headerlist a:hover {
   padding: 0.3% 1.2%;
 }
 
+@media only screen and (max-width: 576px) {
+  header img {
+    padding: 2vh 0 0 1vw;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navigation .navlist {
+    list-style: none;
+  }
+  .navigation .navlist .navmenu {
+    display: flex;
+    align-items: center;
+    padding: 2vh 0 2vh 0;
+  }
+  .navigation .navlist .navmenu div {
+    margin: 0 15px 0 4px;
+    padding: 6px;
+  }
+  .navigation .navlist .navmenu a {
+    padding: 0 0 0 -5vw;
+  }
+  .navigation .navlist .active {
+    color: #fff;
+  }
+  .navigation .navlist .active div::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navigation .navlist .active a {
+    color: #fff;
+  }
+  .navigation .navlist .navstripe {
+    padding: 3vh 0;
+    border-left: 1px solid #867772;
+    margin: -8px 0 0 10px;
+  }
+
+  .main-home .home-design {
+    display: grid;
+    grid-template: 2fr/1fr;
+    padding: 0 5% 0 15%;
+  }
+  .main-home .home-design div:nth-of-type(1) {
+    margin: 0 5vw 5vh 2vw;
+  }
+  .main-home .home-design div:nth-of-type(2) {
+    margin: 15vh 5vw 20vh 2vw;
+  }
+
+  .main-lounger {
+    grid-template: 1fr/1fr;
+  }
+  .main-lounger img {
+    padding: 12vh 0 0 0;
+  }
+  .main-lounger article {
+    padding: 5vh 15% 10vh 25%;
+  }
+  .main-lounger article h2 {
+    padding: 0 0 5vh 0;
+  }
+
+  .main-shop {
+    grid-template: 1fr/1fr;
+  }
+
+  .main-inspiration {
+    padding: 0 10vw 0 25vw;
+  }
+  .main-inspiration .inspiration-video video {
+    width: 100%;
+  }
+  .main-inspiration .inspiration-article {
+    margin: 10vh 0 20vh 0;
+  }
+  .main-inspiration .inspiration-article h3,
+.main-inspiration .inspiration-article h2 {
+    margin: 0 0 3vh 0;
+  }
+  .main-inspiration .inspiration-article p {
+    margin: 0 0 5vh 0;
+  }
+  .main-inspiration .inspiration-article .inspiration-grid {
+    grid-template: repeat(4, 1fr)/1fr;
+  }
+
+  .subscribe {
+    display: grid;
+    grid-template: 1fr/1fr;
+    height: 100vh;
+  }
+  .subscribe section {
+    padding: 5vh 0 0 23vw;
+  }
+
+  #popupwindow {
+    position: absolute;
+    padding: 10vh 2vw;
+  }
+
+  #contactwindow {
+    position: absolute;
+    padding: 10vh 2vw;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
